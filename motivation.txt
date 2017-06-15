@@ -1,0 +1,46 @@
+- Automated Version Control 
+- Backup of code
+- Branching to support different code versions while not tampering the master code
+- Synchronicity to use the latest tools avoiding discrepancy
+- Avoiding multiple versions of same file locally
+
+Common terminology: 
+Repository - version of project on the cloud
+Working Set -  Version of the project that sits locally on your computer.
+Stage - intermediate b/w working copy 
+
+git init 
+git add filename
+git status
+git log
+git add filename  -> add file to the staging env
+
+git diff -> comparison of working set and first commit
+
+git checkout <first 4 characters of commit ID> -> reverts the file on the working set to any particular commit
+
+git branch -> check all the branches
+
+git checkout <branch name> -> move HEAD to another branch
+
+example :
+1)change branch using git checkout
+2)modify the text file being committed
+3)commit to new branch
+4)checkout to previous branch
+5)see the text file again
+6) it has the previous version of file
+
+git remote add origin https://github.com/rathp/Lab_Meeting_Trial.git -> add remote repo , here origin is name of your repo
+
+if you want to add a new repo
+
+git remote add other <url>
+
+push:
+git push <name of local repo > <name of remote repo>
+git push origin master
+
+remember that there is are branches locally and branches on the remote repo
+
+
